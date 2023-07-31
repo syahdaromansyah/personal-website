@@ -14,7 +14,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className="text-slate-800 dark:text-slate-300">{children}</body>
     </html>
   );
 }
