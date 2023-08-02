@@ -10,7 +10,7 @@ export default function Home() {
     <div className={`${interFont.variable} ${poppinsFont.variable} font-inter`}>
       <div className="xl:h-screen w-full">
         <div className="h-full w-full bg-gradient-to-bl from-gray-100 via-gray-300/90 to-gray-200 dark:bg-gradient-to-bl dark:from-gray-950/95 dark:via-gray-950 dark:to-gray-950/95">
-          <div className="h-full w-full container mx-auto px-6 pt-14 pb-14 md:max-w-lg md:px-0 lg:max-w-2xl xl:pt-0 xl:pb-0">
+          <div className="h-full w-full container mx-auto px-6 pt-20 pb-24 md:max-w-lg md:px-0 lg:max-w-2xl xl:pt-0 xl:pb-0">
             <div className="h-full w-full xl:flex xl:justify-center xl:items-center">
               {/* The beginning of the content page */}
               <div>
@@ -23,7 +23,7 @@ export default function Home() {
                   />
                 </header>
 
-                <div className="mb-6">
+                <div className="mb-8 md:mb-6">
                   <main>
                     <section className="text-center mb-4 border-b-2 border-slate-400 border-dashed pb-4 dark:border-slate-500">
                       <h1 className="text-transparent bg-clip-text bg-gradient-to-br from-slate-800 to-slate-900 font-poppins font-extrabold text-2xl mb-2 dark:from-slate-100 dark:to-slate-400 lg:text-4xl lg:mb-4">
