@@ -70,21 +70,21 @@ export default function Home() {
                     <p>
                       Amazingly build with{' '}
                       <a
-                        className="transition focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-slate-200 focus:ring-slate-900 dark:focus:ring-offset-slate-950 dark:focus:ring-blue-600"
+                        className="transition focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-slate-200 focus:ring-slate-900 dark:focus:ring-offset-slate-950 dark:focus:ring-blue-600 dark:text-slate-400 underline"
                         href="https://nextjs.org"
                       >
                         Next.js
                       </a>
                       ,{' '}
                       <a
-                        className="transition focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-slate-200 focus:ring-slate-900 dark:focus:ring-offset-slate-950 dark:focus:ring-blue-600"
+                        className="transition focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-slate-200 focus:ring-slate-900 dark:focus:ring-offset-slate-950 dark:focus:ring-blue-600 dark:text-slate-400 underline"
                         href="https://tailwindcss.com"
                       >
                         Tailwind CSS
                       </a>
                       , and hosted on{' '}
                       <a
-                        className="transition focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-slate-200 focus:ring-slate-900 dark:focus:ring-offset-slate-950 dark:focus:ring-blue-600"
+                        className="transition focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-slate-200 focus:ring-slate-900 dark:focus:ring-offset-slate-950 dark:focus:ring-blue-600 dark:text-slate-400 underline"
                         href="https://vercel.com"
                       >
                         Vercel
