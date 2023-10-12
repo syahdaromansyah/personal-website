@@ -4,7 +4,7 @@ import SocialLinkPrimary from './SocialLinkPrimary';
 
 export default function SocialLinks() {
   return (
-    <ul className="grid grid-cols-3 gap-x-2">
+    <ul className="grid grid-cols-3 gap-x-3 lg:gap-x-6">
       <li>
         <SocialLinkPrimary
           href="mailto:syahdarom@gmail.com"
