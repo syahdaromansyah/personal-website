@@ -9,6 +9,8 @@ export default function AttachmentLinks() {
           href="https://resume.io/r/5TQyhFJgD"
           icon={<IoMdAttach className="inline-block h-4 w-auto" />}
           text="Resume"
+          target="_blank"
+          rel="noopener noreferrer"
         />
       </li>
     </ul>

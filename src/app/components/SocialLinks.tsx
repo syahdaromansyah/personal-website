@@ -4,12 +4,14 @@ import SocialLinkPrimary from './SocialLinkPrimary';
 
 export default function SocialLinks() {
   return (
-    <ul className="grid grid-cols-3 gap-x-2">
+    <ul className="grid grid-cols-3 gap-x-3 lg:gap-x-6">
       <li>
         <SocialLinkPrimary
           href="mailto:syahdarom@gmail.com"
           icon={<MdOutlineAlternateEmail className="inline-block" />}
           text="Email"
+          target="_blank"
+          rel="noopener noreferrer"
         />
       </li>
 
@@ -18,6 +20,8 @@ export default function SocialLinks() {
           href="https://github.com/syahdaromansyah"
           icon={<FaGithub className="inline-block" />}
           text="Github"
+          target="_blank"
+          rel="noopener noreferrer"
         />
       </li>
 
@@ -26,6 +30,8 @@ export default function SocialLinks() {
           href="https://www.linkedin.com/in/syahdarom"
           icon={<FaLinkedin className="inline-block" />}
           text="LinkedIn"
+          target="_blank"
+          rel="noopener noreferrer"
         />
       </li>
     </ul>
