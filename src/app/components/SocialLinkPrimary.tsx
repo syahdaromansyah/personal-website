@@ -1,23 +1,23 @@
-import type { ReactNode } from 'react';
+import type { AnchorHTMLAttributes, DetailedHTMLProps, ReactNode } from 'react';
 
-interface SocialLinkPrimaryProps {
-  href: string;
+type SocialLinkPrimaryProps = Omit<
+  DetailedHTMLProps<AnchorHTMLAttributes<HTMLAnchorElement>, HTMLAnchorElement>,
+  'className'
+> & {
   icon: ReactNode;
   text: string;
-}
+};
 
 export default function SocialLinkPrimary({
-  href,
   icon,
   text,
+  ...otherHTMLProps
 }: SocialLinkPrimaryProps) {
   return (
     <span className="inline-block w-full relative">
       <a
         className="peer inline-block w-full text-center py-2 rounded-sm focus:outline-none relative z-20"
-        href={href}
-        target="_blank"
-        rel="noopener noreferrer"
+        {...otherHTMLProps}
       >
         <div className="flex justify-center items-center gap-x-1 relative">
           {icon}{' '}
