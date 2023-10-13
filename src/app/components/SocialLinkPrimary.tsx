@@ -34,7 +34,7 @@ export default function SocialLinkPrimary({
       ></div>
 
       <div
-        className="peer-active:-translate-x-4 peer-active:-translate-y-4 absolute h-full w-full max-h-[20px] max-w-[20px] peer-hover:max-h-full peer-focus:max-h-full peer-hover:max-w-[calc(100%+4px)] peer-focus:max-w-[calc(100%+4px)] dark:bg-slate-100/5 rounded-lg peer-hover:rounded peer-focus:rounded backdrop-blur transition-custom duration-300 -right-2 -bottom-2 peer-hover:border border-slate-500 dark:border-slate-900 peer-hover:-translate-x-3 peer-focus:-translate-x-3 peer-hover:-translate-y-3 peer-focus:-translate-y-3 peer-focus:border-0 peer-focus:ring peer-focus:ring-slate-800 dark:peer-focus:ring-blue-600 z-10 "
+        className="peer-active:-translate-x-4 peer-active:-translate-y-4 absolute h-full w-full max-h-[20px] max-w-[20px] peer-hover:max-h-full peer-focus:max-h-full peer-hover:max-w-[calc(100%+4px)] peer-focus:max-w-[calc(100%+4px)] bg-slate-100/5 rounded-lg peer-hover:rounded peer-focus:rounded backdrop-blur transition-custom duration-300 -right-2 -bottom-2 peer-hover:border border-slate-500 dark:border-slate-900 peer-hover:-translate-x-3 peer-focus:-translate-x-3 peer-hover:-translate-y-3 peer-focus:-translate-y-3 peer-focus:border-0 peer-focus:ring peer-focus:ring-slate-800 dark:peer-focus:ring-blue-600 z-10 "
         aria-hidden="true"
         role="presentation"
       ></div>
