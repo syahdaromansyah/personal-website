@@ -16,6 +16,8 @@ export default function SocialLinkPrimary({
       <a
         className="peer inline-block w-full text-center py-2 rounded-sm focus:outline-none relative z-20"
         href={href}
+        target="_blank"
+        rel="noopener noreferrer"
       >
         <div className="flex justify-center items-center gap-x-1 relative">
           {icon}{' '}
