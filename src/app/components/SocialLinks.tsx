@@ -10,8 +10,6 @@ export default function SocialLinks() {
           href="mailto:syahdarom@gmail.com"
           icon={<MdOutlineAlternateEmail className="inline-block" />}
           text="Email"
-          target="_blank"
-          rel="noopener noreferrer"
         />
       </li>
 
