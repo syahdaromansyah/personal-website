@@ -1,12 +1,11 @@
-import { Inter, Poppins } from 'next/font/google';
+import { Inter, Raleway } from 'next/font/google';
 
 export const interFont = Inter({
   subsets: ['latin'],
   variable: '--font-inter',
 });
 
-export const poppinsFont = Poppins({
+export const ralewayFont = Raleway({
   subsets: ['latin'],
-  variable: '--font-poppins',
-  weight: ['400', '500', '600', '700', '800', '900'],
+  variable: '--font-raleway',
 });
