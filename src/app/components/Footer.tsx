@@ -3,12 +3,12 @@ import type { ReactNode } from 'react';
 const FooterLink = ({
   href,
   children,
-}: {
+}: Readonly<{
   href: string;
   children: ReactNode;
-}) => (
+}>) => (
   <a
-    className="font-semibold hover:text-slate-800 focus:text-slate-800 dark:focus:text-slate-200 dark:hover:text-slate-200 transition focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-slate-200 focus:ring-slate-900 dark:focus:ring-offset-slate-950 dark:focus:ring-blue-600 dark:text-slate-400 underline"
+    className="font-semibold hover:text-slate-800 focus:text-slate-800 dark:focus:text-slate-200 dark:hover:text-slate-200 transition duration-300 focus:outline-none focus:ring focus:ring-offset-2 focus:ring-offset-slate-200 focus:ring-slate-900 dark:focus:ring-offset-[rgba(24,2,8,1)] dark:focus:ring-blue-600 dark:text-slate-400 underline"
     href={href}
   >
     {children}

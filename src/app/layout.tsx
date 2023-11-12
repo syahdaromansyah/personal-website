@@ -10,11 +10,11 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: {
+}: Readonly<{
   children: React.ReactNode;
-}) {
+}>) {
   return (
-    <html lang="en">
+    <html className="dark" lang="en">
       <body
         className={`${interFont.variable} ${ralewayFont.variable} font-inter text-slate-800 dark:text-slate-300`}
       >
