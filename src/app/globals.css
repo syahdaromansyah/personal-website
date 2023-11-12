@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .social-link-fancy_box-shadow {
+    transition:
+      transform cubic-bezier(0.4, 0, 0.2, 1) 300ms,
+      box-shadow cubic-bezier(0.4, 0, 0.2, 1) 700ms;
+  }
+}
