@@ -1,21 +1,19 @@
-import Link from 'next/link';
 import type { ReactNode } from 'react';
-import { UrlObject } from 'url';
 
-type SocialLinkPrimaryProps = {
+type SocialLinkAnchorPrimaryProps = {
   icon: ReactNode;
   text: string;
-  href: string | UrlObject;
+  href: string | undefined;
 };
 
-export default function SocialLinkPrimary({
+export default function SocialLinkAnchorPrimary({
   icon,
   text,
   href,
-}: Readonly<SocialLinkPrimaryProps>) {
+}: Readonly<SocialLinkAnchorPrimaryProps>) {
   return (
     <span className="inline-block lg:w-36 relative">
-      <Link
+      <a
         className="peer inline-block w-full text-center p-2 md:px-4 md:py-3 focus:outline-none relative z-20"
         href={href}
       >
@@ -25,7 +23,7 @@ export default function SocialLinkPrimary({
             {text}
           </span>
         </div>
-      </Link>
+      </a>
 
       <div
         className="hidden lg:block h-full w-full bg-slate-400/40 dark:text-slate-300 rounded dark:bg-slate-900 transition dark:peer-hover:bg-slate-900 dark:peer-focus:bg-slate-900 dark:peer-active:bg-slate-900 top-0 left-0 z-0 absolute peer-hover:translate-y-1 peer-focus:translate-y-1 duration-300 peer-hover:translate-x-1 peer-focus:translate-x-1 peer-active:translate-x-2 peer-active:translate-y-2 dark:peer-hover:bg-slate-900/40 dark:peer-focus:bg-slate-900/40 peer-hover:bg-slate-400/25"
