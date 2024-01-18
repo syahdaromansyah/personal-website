@@ -1,6 +1,6 @@
-import { interFont, ralewayFont } from '@/lib/next-fonts';
 import type { Metadata } from 'next';
 import './globals.css';
+import { interFont, ralewayFont } from './lib/next-fonts';
 
 export const metadata: Metadata = {
   title: 'Syahda Romansyah',
