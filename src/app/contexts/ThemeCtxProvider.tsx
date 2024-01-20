@@ -1,11 +1,34 @@
 'use client';
 
-import type { ReactNode } from 'react';
+import type { Dispatch, ReactNode, SetStateAction } from 'react';
 import { useCallback, useEffect, useMemo, useState } from 'react';
 import type { ThemeValue } from '../types/types';
 import { ThemeContext } from './contexts';
 
 type ThemeStorageValue = ThemeValue | null;
+
+const useInitTheme = ({
+  setTheme,
+}: Readonly<{
+  setTheme: Dispatch<SetStateAction<ThemeValue | null>>;
+}>) => {
+  useEffect(() => {
+    const htmlElem = document.documentElement;
+    const themeValue = localStorage.getItem('theme') as ThemeStorageValue;
+
+    if (
+      themeValue === 'dark' ||
+      (themeValue === null &&
+        window.matchMedia('(prefers-color-scheme: dark)').matches)
+    ) {
+      htmlElem.classList.add('dark');
+      setTheme(() => 'dark');
+    } else {
+      htmlElem.classList.remove('dark');
+      setTheme(() => 'light');
+    }
+  }, [setTheme]);
+};
 
 export default function ThemeCtxProvider({
   children,
@@ -44,22 +67,7 @@ export default function ThemeCtxProvider({
     [changeTheme, theme],
   );
 
-  useEffect(() => {
-    const htmlElem = document.documentElement;
-    const themeValue = localStorage.getItem('theme') as ThemeStorageValue;
-
-    if (
-      themeValue === 'dark' ||
-      (themeValue === null &&
-        window.matchMedia('(prefers-color-scheme: dark)').matches)
-    ) {
-      htmlElem.classList.add('dark');
-      setTheme(() => 'dark');
-    } else {
-      htmlElem.classList.remove('dark');
-      setTheme(() => 'light');
-    }
-  }, []);
+  useInitTheme({ setTheme });
 
   return (
     <ThemeContext.Provider value={ctxValue}>{children}</ThemeContext.Provider>
