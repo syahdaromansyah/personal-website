@@ -13,6 +13,7 @@ const eslintConfig = [
   ...compat.config({
     extends: ['next/core-web-vitals', 'next/typescript', 'prettier'],
     plugins: ['unused-imports'],
+    ignorePatterns: ['.*rc.?(m)js', '*.config.?(m)js', '*.config.ts'],
     rules: {
       '@typescript-eslint/no-unused-vars': 'off',
       'unused-imports/no-unused-imports': 'error',
