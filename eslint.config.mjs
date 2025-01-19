@@ -1,6 +1,4 @@
 import { FlatCompat } from '@eslint/eslintrc';
-import eslintConfigPrettier from 'eslint-config-prettier';
-import unusedImports from 'eslint-plugin-unused-imports';
 import { dirname } from 'path';
 import { fileURLToPath } from 'url';
 
@@ -12,11 +10,9 @@ const compat = new FlatCompat({
 });
 
 const eslintConfig = [
-  ...compat.extends('next/core-web-vitals', 'next/typescript'),
-  {
-    plugins: {
-      'unused-imports': unusedImports,
-    },
+  ...compat.config({
+    extends: ['next/core-web-vitals', 'next/typescript', 'prettier'],
+    plugins: ['unused-imports'],
     rules: {
       '@typescript-eslint/no-unused-vars': 'off',
       'unused-imports/no-unused-imports': 'error',
@@ -30,8 +26,7 @@ const eslintConfig = [
         },
       ],
     },
-  },
-  eslintConfigPrettier,
+  }),
 ];
 
 export default eslintConfig;
